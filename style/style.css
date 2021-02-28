@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+html, body {
+
+    font-family: "Haettenschweiler", sans-serif;
+
+    background: linear-gradient(to right, #fef6ba, #fffbdd);
+
+}
+
+.left-sidebar__section {
+
+    width: 120px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.01));
+
+    padding-right: 0;
+
+    position: fixed;
+
+    overflow-x: hidden;
+
+    transition: background .3s, padding .25s;
+
+}
+
+.left-sidebar__section:hover {
+
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.01));
+
+    padding-right: 30%;
+
+}
+
+.left-sidebar__list {
+
+    min-width: 400px;
+
+    position: absolute;
+
+    top: 50%;
+    left: 20px;
+
+    transform: translate(0, -50%);
+
+}
+
+.list__item {
+
+    display: block;
+
+    color: #fff;
+
+    font-size: 37px;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 20px;
+
+    position: relative;
+
+    cursor: pointer;
+
+}
+
+.list__item::before {
+    
+    content: '';
+
+    display: block;
+
+    width: 7px;
+    height: 3px;
+
+    background: #fff;
+
+    position: absolute;
+
+    top: 50%;
+    left: -12px;
+
+}
+
+.list__item:hover p {
+
+    text-decoration: underline;
+
+}
+
+
+.conteiner {
+
+}
+
+.conteiner--backColorPink {
+
+    background: #d34866;
+
+}
+
+.conteiner--padding {
+
+    padding: 0 50px 60px 50px;
+
+}
+
+.conteiner__header {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 50px 0;
+
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.45);
+}
+
+.header {
+
+    background: linear-gradient(to right, #52002a, #ac002d);
+
+}
+
+
+.title {
+
+    font-size: 65px;
+
+    color: #fff;
+
+    letter-spacing: 7px;
+
+    text-align: center;
+
+}
+
+.header__title {
+
+}
+
+.subtitle {
+
+    font-size: 20px;
+
+    color: #fff;
+
+}
+
+.header__subtitle {
+
+    display: block;
+
+    text-align: right;
+
+    margin-right: 6px;
+
+}
+
+.content__title {
+
+    padding: 20px 0;
+
+    color: #fff;
+
+}
+
+.content__block-wrapper {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.block-wrapper--padding {
+
+    padding: 30px 50px;
+
+}
+
+.block-wrapper__text {
+
+    max-width: 650px;
+
+}
+
+.text {
+
+    color: #fff;
+
+    font-size: 35px;
+
+    letter-spacing: 7px;
+
+
+}
+
+.text--letterSpacing {
+    letter-spacing: 0;
+}
+
+.text--textShadow,
+.content__title--textShadow {
+    text-shadow: 0 0 1px #666;
+}
+
+
+.frame {
+
+    background: #fff;
+
+    padding: 80px;
+    padding-bottom: 100px;
+
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.block-wrapper__frame {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 10px;
+
+
+}
+
+.frame__wrapper {
+    position: relative;
+}
+
+.frame__img-first {
+
+
+}
+
+.frame__img {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    transition: opacity 1s;
+
+}
+
+.frame__img--opUnvisible {
+    opacity: 0;
+}
+
+
+
+.conteiner__decor-band {
+
+    height: 250px;
+
+}
+
+.conteiner__skils {
+
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.skils__box-item {
+
+    padding: 30px 20px;
+
+}
+
+
+.box-item {
+
+    min-width: 200px;
+
+    background: #fff;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.box-item--shadowAnimate {
+    transition: box-shadow .3s;
+
+    cursor: pointer;
+}
+
+.box-item--shadowAnimate:hover {
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+
+}
+
+.box-item--fontFamily {
+
+    font-family: 'Poppins', sans-serif; 
+
+}
+
+.skils__box-item {
+
+    max-width: 400px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: -140px;
+
+}
+
+.box-item__img {
+
+    height: 200px;
+
+}
+
+.box-item__title {
+
+    color: #000;
+
+    font-size: 32px;
+
+    margin: 10px 0;
+
+}
+
+.box-item__text {
+
+    font-size: 20px;
+
+    letter-spacing: 1px;
+
+    text-align: center;
+
+}
