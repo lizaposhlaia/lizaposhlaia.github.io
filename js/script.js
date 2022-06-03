@@ -1,1 +1,0 @@
-let bth=document.querySelector("#menu-burger__bth-active-test");bth.addEventListener("click",(function(){document.querySelector(".menu-burger__background-blur").classList.toggle("menu-burger__block--viisble"),document.querySelector(".menu-burger__list").classList.toggle("menu-burger__block--viisble")}));
