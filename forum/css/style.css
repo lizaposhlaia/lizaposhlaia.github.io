@@ -276,17 +276,17 @@ body {
   margin-top: 9px;
 }
 
-.header__option-burger-bth--active span,
-.header__option-burger-bth--active span::before,
-.header__option-burger-bth--active span::after {
+.header__option-burger-bth.modal-active span,
+.header__option-burger-bth.modal-active span::before,
+.header__option-burger-bth.modal-active span::after {
   margin: 0;
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
-.header__option-burger-bth--active span::before,
-.header__option-burger-bth--active span::after {
+.header__option-burger-bth.modal-active span::before,
+.header__option-burger-bth.modal-active span::after {
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -449,7 +449,7 @@ body {
   opacity: 0;
 }
 
-.burger-menu.active {
+.burger-menu.modal-active {
   -webkit-transform: translate(0, 0);
       -ms-transform: translate(0, 0);
           transform: translate(0, 0);
@@ -864,12 +864,8 @@ body {
   left: 0;
 }
 
-.form--close {
-  display: none;
-}
-
-.form--active {
-  display: block;
+.form.modal-active {
+  display: block !important;
 }
 
 .form__place {
@@ -885,6 +881,8 @@ body {
 .form__container {
   max-width: 500px;
   width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
   position: absolute;
   top: 50%;
   left: 50%;

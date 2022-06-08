@@ -18,7 +18,7 @@
     <div class="header__container _container">
         <div class="header__body">
             <div class="header__left-part">
-                <a href="/" class="header__logo">
+                <a href="/forum/" class="header__logo">
                     <img src="img/logo/logo__img.png" alt="sheet" class="header__logo-img">
                     <h2 class="header__logo-title">Mintify</h2>
                 </a>
@@ -35,9 +35,9 @@
                 </label>
 
                 <div class="header__auth">
-                    <button class="header__option header__option-search __icon-search"></button>
-                    <button class="header__option header__option-burger-bth">
-                        <span></span>
+                    <button class="header__option header__option-search __icon-search" id="bth-modal" data="header"></button>
+                    <button class="header__option header__option-burger-bth" id="bth-modal" data="header">
+                        <span data="header"></span>
                     </button>
                     <div class="header__profile  _none">
                         <img src="img/avatar/avatar.png" alt="avatar" class="header__avatar">
@@ -48,8 +48,8 @@
                 </div>
             </div>
 
-            <div class="burger-menu">
-                <div class="burger-menu__container _container" id="burger-menu">
+            <div class="burger-menu" id="body-modal" data="header">
+                <div class="burger-menu__container _container" >
                     <div class="burger-menu__body">
                         <ul class="burger-menu__list">
                             <li class="burger-menu__item">
@@ -75,7 +75,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="burger-menu__place"></div>
+                <div class="burger-menu__place" id="body-close-modal" data="header"></div>
             </div>
 
         </div>
@@ -103,13 +103,13 @@
 
             </main>
 
-            <header class="footer">
+            <footer class="footer">
     <div class="footer__container _container">
         <div class="footer__body">
             <p class="footer__title">Сайт был создан в 2022 году.</p>
         </div>
     </div>
-</header>
+</footer>
 
         </div>
         
