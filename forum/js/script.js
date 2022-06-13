@@ -1,9 +1,9 @@
 if (document.querySelector('#bth-modal') !== null) {
 
-    const modalBth = document.querySelectorAll('#bth-modal');
-    const modalBody = document.querySelectorAll('#body-modal');
+    const modalBth = document.querySelectorAll('.bth-modal');
+    const modalBody = document.querySelectorAll('.body-modal');
     const body = document.querySelector('body');
-    const modalBodyClose = document.querySelectorAll('#body-close-modal');
+    const modalBodyClose = document.querySelectorAll('.body-close-modal');
 
    //console.log(modalBody[0].attributes.data.value);
 
