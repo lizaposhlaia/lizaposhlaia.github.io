@@ -44,10 +44,11 @@ if (document.querySelector('#bth-modal') !== null) {
     })
 
     function checkActivModalBth(attr) {
+        console.log(attr, modalBth);
         modalBth.forEach(el => {
             if (el.attributes.data.value == attr) {
-                if (el.classList.contains('modal-active')) {el.classList.remove('modal-active');}
-                else {el.classList.add('modal-active');}
+                if (el.classList.contains('modal-active')) el.classList.remove('modal-active');
+                else el.classList.add('modal-active');
             }
         });
     }
