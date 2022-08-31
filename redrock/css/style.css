@@ -277,6 +277,9 @@ body {
   color: #FFFFFF;
   margin-right: 0.3125rem;
   text-transform: uppercase;
+  -webkit-transition: opacity 0.3s ease 0s;
+  -o-transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s;
 }
 
 .header__logo span {
@@ -757,13 +760,13 @@ body {
   margin-bottom: 1.0625rem;
 }
 
-.list-tariffs__icon img {
+.list-tariffs__icon-wrapper img {
   height: 28px;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-.list-tariffs__icon img:not(:last-child) {
+.list-tariffs__icon-wrapper:not(:last-child) {
   margin-right: 1.125rem;
 }
 
@@ -796,10 +799,20 @@ body {
   margin-bottom: 1rem;
 }
 
-.list-tariffs__li {
+.list-tariffs__ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.list-tariffs__li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1042,12 +1055,22 @@ body {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
+    padding-top: 0;
   }
 
   .content-platforms__list {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+
+  .tariffs__body {
+    padding: 3.75rem 0;
+  }
+
+  .questions__body {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
   }
 }
 
@@ -1094,6 +1117,19 @@ body {
   .platforms__img:first-child {
     display: none;
   }
+
+  .content-platforms__wrapper {
+    margin-bottom: 0.3125rem;
+  }
+
+  .tariffs__body {
+    padding: 2.8125rem 0;
+  }
+
+  .questions__body {
+    padding-top: 2.8125rem;
+    padding-bottom: 2.8125rem;
+  }
 }
 
 @media (max-width: 29.99875em) {
@@ -1133,6 +1169,10 @@ body {
     margin-bottom: 1.5625rem;
   }
 
+  .platforms__title {
+    margin-bottom: 1.375rem;
+  }
+
   .content-platforms__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1141,12 +1181,27 @@ body {
     gap: 16px 0;
   }
 
+  .tariffs__body {
+    padding: 1.5625rem 0;
+  }
+
   .tariffs__btn {
     width: auto;
   }
 
   .list-tariffs__item {
     min-width: 290px;
+  }
+
+  .questions__body {
+    padding-top: 1.5625rem;
+    padding-bottom: 1.5625rem;
+  }
+}
+
+@media (any-hover: hover) {
+  .header__logo:hover {
+    opacity: 0.7;
   }
 }
 
